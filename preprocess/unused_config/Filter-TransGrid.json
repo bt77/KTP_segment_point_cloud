@@ -1,0 +1,74 @@
+[
+	{
+		"type": "readers.las",
+		"filename": "placeholder"
+	},
+	{
+		"type":"filters.sample",
+		"radius": 0.001
+	},
+	{
+		"type":"filters.normal"
+    	},
+	{
+		"type":"filters.range", 
+		"limits": "Classification[2:2], Classification[4:5], Classification[64:]"
+	},
+	{   
+		"type":"filters.assign",
+		"assignment" : "Classification[2:2]=0"
+	},
+	{   
+		"type":"filters.assign",
+		"assignment" : "Classification[4:5]=2"
+	},
+	{   
+		"type":"filters.assign",
+		"assignment" : "Classification[64:64]=8"
+	},
+	{   
+		"type":"filters.assign",
+		"assignment" : "Classification[90:90]=0"
+	},
+	{   
+		"type":"filters.assign",
+		"assignment" : "Classification[96:96]=7"
+	},
+	{   
+		"type":"filters.assign",
+		"assignment" : "Classification[126:126]=3"
+	},
+	{   
+		"type":"filters.assign",
+		"assignment" : "Classification[148:148]=6"
+	},
+	{   
+		"type":"filters.assign",
+		"assignment" : "Classification[151:151]=5"
+	},
+	{   
+		"type":"filters.assign",
+		"assignment" : "Classification[187:210]=4"
+	},
+	{   
+		"type":"filters.assign",
+		"assignment" : "Classification[215:224]=1"
+	},
+	{   
+		"type":"filters.assign",
+		"assignment" : "Classification[225:225]=4"
+	},
+	{   
+		"type":"filters.assign",
+		"assignment" : "Classification[230:230]=1"
+	},
+	{   
+		"type":"filters.assign",
+		"assignment" : "Classification[232:232]=4"
+	},
+	{
+        	"type":"writers.las",
+        	"filename":"placeholder",
+		"extra_dims": "NormalX=float,NormalY=float,NormalZ=float"
+    	}
+]

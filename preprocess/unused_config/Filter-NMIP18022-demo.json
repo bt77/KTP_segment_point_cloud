@@ -1,0 +1,17 @@
+[
+		{
+			"type": "readers.las",
+			"filename": "placeholder"
+		 },
+		{
+			"type":"filters.range", 
+			"limits": "Classification[2:2], Classification[4:5]"
+		},
+		{
+			"type":"writers.text", 
+			"filename": "placeholder",
+			"order": "X,Y,Z,Intensity,ReturnNumber,NumberOfReturns",
+			"keep_unspecified": "false",
+			"quote_header": "false"
+		}
+]

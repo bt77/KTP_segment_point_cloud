@@ -1,0 +1,9 @@
+{
+    "in_dir": "/media/external/segment_las/result/dense/SSE-D_Demo1_2/test",
+    "out_dir": "/media/external/segment_las/result/postprocess/SSE-D_Demo1_2",
+    "point_dir": "/media/external/data/SSE/Demo1_2_tiled/A3",
+    "lastools_path": "/home/nmgml/wine/LasTools",
+    
+	"multiply_intensity_by": "255"
+
+}

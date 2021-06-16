@@ -1,0 +1,18 @@
+[TerraScan macro]
+Version=015.001
+Description=CleanIsolatedPoint
+Author=NW
+ByLine=0
+ByScanner=0
+SlaveCanRun=1
+AnotherComputerCanRun=1
+CanBeDistributed=1
+
+# Classifies isolated Network points to Network_Isolated if no other Network points within 10m
+FnScanClassifyIsolated("1",11,1,"1",10.00,0)
+# Classifies isolated Vegetation points to Vegetation_Unclassified if no other Vegetation points within 3m, inside cluster client swathe
+FnScanClassifyIsolated("2",12,1,"2",3.00,0)
+# Classifies isolated Building points to Building_Unclassified if no other Building points within 3m, inside cluster client swathe
+FnScanClassifyIsolated("3",13,1,"3",3.00,0)
+FnScanClassifyIsolated("0",10,1,"0",3.00,0)
+# Classifies isolated Other points to Other_Isolated if no other Other points within 10m

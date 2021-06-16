@@ -1,0 +1,53 @@
+{
+    "gpu": "0",
+    "num_classes": 4,
+
+    "labels_names": [ "Other", "Network", "Veg", "Building"],
+    "logdir": "log/UKPNTest1",
+    "data_path": "/media/external/data/UKPN/DemoTest_points",
+    "output_dir": "UKPN_demo",
+    "train_areas": [
+        "train"
+    ],
+    "validation_areas": [
+        "validation"
+    ],
+    "test_areas": ["test"],
+
+    "start_epoch": 0,
+    "max_epoch": 100,
+    "num_point": 8192,
+    "batch_size": 32,
+    "num_additional_inputs": 4,
+
+    "loss_func": "ce",
+    "focusing_param": 2,
+    "balancing_factor": 0.25,
+    "optimizer": "adam",
+    "momentum": 0.9,
+    "learning_rate": 0.001,
+    "decay_step": 200000,
+    "learning_rate_decay_rate": 0.7,
+
+    "box_size_x": 23,
+    "box_size_y": 23,
+    "bn_init_decay": 0.5,
+    "bn_decay_decay_rate": 0.5,
+    "bn_decay_clip": 0.99,
+
+    "l1_radius": 0.55,
+    "l1_nsample": 32,
+    "l1_npoint": 1024,
+
+    "l2_radius": 1.56,
+    "l2_nsample": 32,
+    "l2_npoint": 256,
+
+    "l3_radius": 6.25,
+    "l3_nsample": 32,
+    "l3_npoint": 64,
+
+    "l4_radius": 25.0,
+    "l4_nsample": 32,
+    "l4_npoint": 16
+}

@@ -1,0 +1,42 @@
+[
+	{
+		"type": "readers.las",
+		"filename": "placeholder"
+	},
+	{
+		"type":"filters.sample",
+		"radius": 0.001
+	},
+	{   
+		"type":"filters.assign",
+		"assignment" : "Classification[4:5]=2"
+	},
+	{   
+		"type":"filters.assign",
+		"assignment" : "Classification[6:6]=3"
+	},
+	{   
+		"type":"filters.assign",
+		"assignment" : "Classification[8:9]=2"
+	},
+	{   
+		"type":"filters.assign",
+		"assignment" : "Classification[14:14]=5"
+	},
+	{   
+		"type":"filters.assign",
+		"assignment" : "Classification[15:15]=1"
+	},
+	{   
+		"type":"filters.assign",
+		"assignment" : "Classification[16:16]=0"
+	},
+	{   
+		"type":"filters.assign",
+		"assignment" : "Classification[23:23]=4"
+	},
+	{
+        	"type":"writers.las",
+        	"filename":"placeholder"
+    	}
+]

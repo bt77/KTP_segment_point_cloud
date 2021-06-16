@@ -1,0 +1,19 @@
+{
+    "num_cores": 1,
+    
+    "base_dir": "/media/nan/InternalDrive/KTP/data/test",
+    "project": "Alt-C83",
+    "pdal_config": "/media/nan/InternalDrive/KTP/segment_point_cloud/preprocess/configs/Filter-Altalink.json",
+    "lastools_path": "/home/nan/wine/LasTools",
+    
+    "unit_is_meter": 1,
+    
+    "devide_intensity_by": 16,
+    "tile_length": "49",
+    "tile_buffer": "8",
+    
+    "training": 1,
+    "prob_data_split": [0.9, 0.1],
+    "keep_all": [1, 6, 7, 8],
+    "prob_essential": [0.99, 0.01]
+}

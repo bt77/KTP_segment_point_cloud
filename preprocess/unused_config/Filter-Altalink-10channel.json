@@ -1,0 +1,102 @@
+[
+	{
+		"type": "readers.las",
+		"filename": "placeholder"
+	},
+	{
+		"type":"filters.sample",
+		"radius": 0.001
+	},
+	{
+		"type":"filters.normal"
+    	},
+    	{
+		"type":"filters.range", 
+		"limits": "Classification[2:2], Classification[4:5], Classification[64:182], Classification[186:]"
+	},
+	{   
+		"type":"filters.assign",
+		"assignment" : "Classification[2:2]=0"
+	},
+	{   
+		"type":"filters.assign",
+		"assignment" : "Classification[4:5]=2"
+	},
+	{   
+		"type":"filters.assign",
+		"assignment" : "Classification[64:65]=8"
+	},
+	{   
+		"type":"filters.assign",
+		"assignment" : "Classification[71:93]=0"
+	},
+	{   
+		"type":"filters.assign",
+		"assignment" : "Classification[95:95]=5"
+	},
+	{   
+		"type":"filters.assign",
+		"assignment" : "Classification[98:102]=7"
+	},
+	{   
+		"type":"filters.assign",
+		"assignment" : "Classification[126:129]=3"
+	},
+	{   
+		"type":"filters.assign",
+		"assignment" : "Classification[130:140]=5"
+	},
+	{   
+		"type":"filters.assign",
+		"assignment" : "Classification[142:142]=3"
+	},
+	{   
+		"type":"filters.assign",
+		"assignment" : "Classification[143:143]=5"
+	},
+	{   
+		"type":"filters.assign",
+		"assignment" : "Classification[148:148]=6"
+	},
+	{   
+		"type":"filters.assign",
+		"assignment" : "Classification[151:174]=5"
+	},
+	{   
+		"type":"filters.assign",
+		"assignment" : "Classification[176:179]=3"
+	},
+	{   
+		"type":"filters.assign",
+		"assignment" : "Classification[180:182]=5"
+	},
+	{   
+		"type":"filters.assign",
+		"assignment" : "Classification[186:186]=1"
+	},
+	{   
+		"type":"filters.assign",
+		"assignment" : "Classification[188:210]=4"
+	},
+	{   
+		"type":"filters.assign",
+		"assignment" : "Classification[215:224]=1"
+	},
+	{   
+		"type":"filters.assign",
+		"assignment" : "Classification[230:247]=4"
+	},
+    	{   
+		"type":"filters.assign",
+		"assignment" : "Classification[252:252]=5"
+	},
+	{   
+		"type":"filters.assign",
+		"assignment" : "Classification[253:254]=1"
+	},
+	{
+        	"type":"writers.las",
+        	"filename":"placeholder",
+		"extra_dims": "NormalX=float,NormalY=float,NormalZ=float"
+    	}
+]

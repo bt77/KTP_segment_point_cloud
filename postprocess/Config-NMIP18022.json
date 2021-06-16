@@ -1,0 +1,10 @@
+{
+    "in_dir": "/media/nan/InternalDrive/KTP/segment_point_cloud/result/dense/NESTest35-val-retile/validation",
+    "out_dir": "/media/nan/InternalDrive/KTP/segment_point_cloud/result/postprocess/NESTest35-val-retile",
+    "point_dir": "/media/nan/InternalDrive/KTP/data/NESTest35/NESTest35-val-retile/retiled_laz",
+    "lastools_path": "/home/nan/wine/LasTools",
+	
+	"num_classes": 10,
+	"knn": 50
+
+}
