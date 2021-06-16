@@ -1,0 +1,13 @@
+__pychache__/
+
+build/
+log/
+result/
+
+*.log
+.vs/
+*.pyc
+*.o
+*.so
+*.out
+*.zip
